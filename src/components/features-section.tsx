@@ -3,51 +3,45 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Ультимативный продавец",
+    description: "ИИ-агент с RAG памятью. Запоминает весь диалог, работает с базой до 1000 товаров. Отлично закрывает продажи 24/7.",
+    emoji: "🤖",
+    badge: "Продажи",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Анализ звонков",
+    description: "ИИ-агент скачивает запись разговора, расшифровывает и составляет глубокий анализ качества и эффективности.",
+    emoji: "📞",
+    badge: "Аналитика",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Личный бухгалтер",
+    description: "Автоматический разбор счетов и актов из PDF в Google Sheets. Экономит часы рутинной работы бухгалтерии.",
+    emoji: "📊",
+    badge: "Финансы",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Анализ конкурентов в Telegram",
+    description: "Выявляет нишу, ЦА, контент-стратегию, формулу вовлечённости, сильные и слабые стороны канала с оценкой по 10-балльной шкале.",
+    emoji: "🔍",
+    badge: "Маркетинг",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
-  },
-  {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Telegram на автопилоте",
+    description: "Полностью автоматизированный Telegram-канал с личным AI-менеджером. Контент, публикации и вовлечение без вашего участия.",
+    emoji: "✈️",
+    badge: "Автоматизация",
   },
 ]
 
 export function FeaturesSection() {
   return (
-    <section className="py-24 px-6 bg-background">
+    <section id="services" className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">ИИ для бизнеса</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Снижаем расходы на маркетинг, продажи и обучение через внедрение ИИ в бизнес-процессы
           </p>
         </div>
 
@@ -60,14 +54,7 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
+                  <span className="text-3xl">{feature.emoji}</span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
                   </Badge>

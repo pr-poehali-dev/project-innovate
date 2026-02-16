@@ -3,7 +3,6 @@ import { FeaturesSection } from "@/components/features-section"
 import { TechnologySection } from "@/components/technology-section"
 import { ApplicationsTimeline } from "@/components/applications-timeline"
 import { AboutSection } from "@/components/about-section"
-import { SafetySection } from "@/components/safety-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { FAQSection } from "@/components/faq-section"
 import { CTASection } from "@/components/cta-section"
@@ -17,14 +16,9 @@ export default function Index() {
       <main>
         <Hero3D />
         <FeaturesSection />
-        <section id="technology">
-          <TechnologySection />
-        </section>
+        <TechnologySection />
         <ApplicationsTimeline />
         <AboutSection />
-        <section id="safety">
-          <SafetySection />
-        </section>
         <TestimonialsSection />
         <section id="faq">
           <FAQSection />
